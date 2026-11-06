@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DREAMY FASHION WORLD</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>🎀 DREAMY FASHION WORLD</h1>
+      <p>Your little plush fashion studio</p>
+    </div>
+    <div class="wallet">
+      <span>🪙 <b id="coins">0</b></span>
+      <span>⭐ <b id="stars">0</b></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="game-area">
+      <div class="section-heading">
+        <h2>✨ My Fashion Studio</h2>
+        <span class="small-tag">3D PLUSH WORLD</span>
+      </div>
+
+      <div id="scene-container">
+        <div class="loading" id="loading">Đang mở thế giới mơ mộng...</div>
+      </div>
+
+      <p class="hint">☝️ Kéo nhân vật để xoay 360°</p>
+
+      <div class="panel">
+        <h3>🐰 Chọn nhân vật</h3>
+        <div class="button-list" id="character-buttons"></div>
+      </div>
+
+      <div class="panel">
+        <h3>👗 Tủ quần áo</h3>
+        <div class="button-list" id="outfit-buttons"></div>
+      </div>
+
+      <div class="panel">
+        <h3>🎀 Phụ kiện</h3>
+        <div class="button-list" id="accessory-buttons"></div>
+      </div>
+
+      <button class="save-button" id="save-look">📸 Lưu tạo hình</button>
+    </section>
+
+    <section class="customer-area">
+      <div class="section-heading">
+        <h2>💌 Đơn hàng khách hàng</h2>
+      </div>
+
+      <div class="customer-card">
+        <div class="customer-avatar">🧸</div>
+        <p class="customer-label">KHÁCH HÀNG ĐANG CHỜ</p>
+        <h3 id="customer-name">Luna</h3>
+        <p id="customer-request">Hãy tạo cho tôi một bộ trang phục thật dễ thương nhé!</p>
+
+        <div class="requirements">
+          <p>👗 Trang phục cần có: <b id="required-outfit">Váy hồng</b></p>
+          <p>🎀 Phụ kiện cần có: <b id="required-accessory">Nơ xinh</b></p>
+        </div>
+
+        <button class="complete-button" id="complete-order">
+          Hoàn thành đơn hàng 💗
+        </button>
+        <p id="order-status" class="order-status">Hãy phối đồ theo yêu cầu nhé!</p>
+      </div>
+
+      <div class="reward-card">
+        <h3>🏆 Phần thưởng</h3>
+        <p>🪙 Tiền xu: <b>+50</b></p>
+        <p>⭐ Ngôi sao: <b>+3</b></p>
+        <p class="small-note">Hoàn thành đúng yêu cầu để nhận thưởng.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with love ♡ DREAMY FASHION WORLD</footer>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
